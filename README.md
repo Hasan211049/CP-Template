@@ -7,7 +7,7 @@ CP-Template/
 ├── snippets.md
 │
 ├── 01 Number Theory/
-│   ├── Binary Exponentiation.cpp
+│   ├── Binary Exponentiation.cpp *
 │   ├── Modular Exponentiation.cpp
 │   ├── Modular Inverse.cpp
 │   ├── Extended Euclid.cpp
