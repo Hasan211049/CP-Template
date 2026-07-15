@@ -27,7 +27,7 @@ CP-Template/
 ├── 02 Combinatorics/
 │   ├── Factorial.cpp
 │   ├── NCR.cpp
-│   ├── NCR Mod.cpp
+│   ├── NCR Mod.cpp *
 │   ├── Catalan.cpp
 │   ├── Inclusion Exclusion.cpp
 │   └── Stars and Bars.cpp
