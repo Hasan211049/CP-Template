@@ -35,24 +35,6 @@ const int N = 1e6 + 5;
 vector<int> spf(N);
 vector<int> primes;
 
-// It precompute's all phi value form [0,,n-1] 
-// Build : O(n logn ) ; query : O(1)
-
- /* void buildPhi() {
-    for (int i = 0; i < N; i++)
-        phi[i] = i;
-
-    for (int i = 2; i < N; i++) {
-        if (phi[i] == i) {          // i is prime
-            for (int j = i; j < N; j += i)
-                phi[j] -= phi[j] / i;
-        }
-    }
-} */
-
-
-
-
 void buildSPF() {
     for (int i = 2; i < N; i++) {
 
