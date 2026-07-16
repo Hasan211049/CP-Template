@@ -1,41 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-
 const int INF = 1e18;
 const int mod = 1e9 + 7;
 
 /*Explanation :
 
-Purpose:
-- Computes (x^n) % mod efficiently.
+Binary Exponentiation computes a^b in O(log b).
 
-
-Time Complexity:
-- O(log n)
-
-Space Complexity:
-- O(1)
-
-
-Notes:
-- If negative bases are possible, use:
-      x = (x % mod + mod) % mod;
+Time Complexity: O(log b)
+Space Complexity: O(1)
 
 */
 
-int power(int x, int n) {
-
-    x %= mod;
+int power(int base, int exp) {
     int ans = 1;
 
-    while (n > 0) {
+    while (exp > 0) {
+        if (exp & 1)
+            ans *= base;
 
-        if (n & 1)
-            ans = ans * x % mod;
-
-        x = x * x % mod;
-        n >>= 1;
+        base *= base;
+        exp >>= 1;
     }
 
     return ans;
@@ -43,10 +29,10 @@ int power(int x, int n) {
 
 void solve() {
 
-    int x, n;
-    cin >> x >> n;
+    int a, b;
+    cin >> a >> b;
 
-    cout << power(x, n) << '\n';
+    cout << power(a, b) << '\n';
 }
 
 int32_t main() {
@@ -55,10 +41,9 @@ int32_t main() {
     cin.tie(0);
 
     int t = 1;
-  //  cin >> t;
+    cin >> t;
 
-    while (t--)
-        solve();
+    while (t--) solve();
 
     return 0;
 }
