@@ -16,6 +16,8 @@ Topic: Ordered Multiset (PBDS)
 
 Indexing: 0-based
 
+N.B : Float / double use korle define int long long __gnu_pbds er por dish
+
 When to use:
 1. Duplicate elements are allowed.
 2. K-th smallest/largest element.
