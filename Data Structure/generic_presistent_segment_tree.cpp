@@ -175,7 +175,7 @@ struct PersistentSegmentTree {
     int query(int node, int l, int r, int ql, int qr) {
 
         if (qr < l || r < ql)
-          return identity(); 
+            return identity(); 
 
         if (ql <= l && r <= qr)
             return tree[node].val;
